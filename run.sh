@@ -24,5 +24,6 @@ docker run -d \
     -v ${cache_dir}:/cache \
     -v ${key_path}:/root/.ssh/id_rsa \
     -v ${entrypoint_path}:/workdir/entrypoint.sh \
+    --name lernaean \
     reg.qiniu.com/dcjanus/lernaean:latest \
     /workdir/entrypoint.sh
