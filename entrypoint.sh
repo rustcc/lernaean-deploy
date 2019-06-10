@@ -2,6 +2,8 @@
 
 set -ex
 
+rm -f /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo "StrictHostKeyChecking no" >> /root/.ssh/config
 
 lernaean \
