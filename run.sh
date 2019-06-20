@@ -20,6 +20,9 @@ fi;
 mkdir -p ${cache_dir}
 
 docker run -d \
+    --log-driver json-file \
+    --log-opt max-size=10m \
+    --log-opt max-file=10 \
     -p 127.0.0.1:8000:8000 \
     -v ${cache_dir}:/cache \
     -v ${key_path}:/root/.ssh/id_rsa \
