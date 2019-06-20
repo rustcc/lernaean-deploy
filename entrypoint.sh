@@ -11,4 +11,5 @@ echo "nameserver 114.114.114.114" >> /etc/resolv.conf
 
 lernaean \
     --dl https://crates.longhash.com.cn/api/v1/crates \
-    --origin git@code.aliyun.com:rustcc/crates.io-index.git
+    --origin git@code.aliyun.com:rustcc/crates.io-index.git \
+    --prefetch_interval 0
